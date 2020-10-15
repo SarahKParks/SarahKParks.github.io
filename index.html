@@ -26,13 +26,62 @@
 			<nav class="nav">
 				<ul class="nav__list">
 					<!-- <li> represents an item in a list -->
-					<li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">About me</a></li>
+					<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
 					<li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
 					<li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
-		
+		<!-- Introduction -->
+		<section class="intro" id="home">
+			<!-- "--" modifier class -->
+			<h1 class="section__title section__title--intro">
+				Hi, I'm <strong>Sarah Parks</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">student dev</p>
+		</section>
+
+		<!-- About me -->
+		<section class="about-me" id="about">
+			<h2 class="section__title section__title--about">About me</h2>
+
+			<div class="projects">
+				<div class="project">
+					<h3>Smart Tic-Tac-Toe</h3>
+					<p>Constructing robotic tic-tac-toe board plays against a user and responds to voice 
+					commands by the user to move their tic-tac-toe pieces. Processing voice commands on 
+					web app with Python backend and implementing JavaScript API for incorporating speech 
+					recognition into web page. Implemented tic-tac-toe game using minimax algorithm.</p>
+				</div>
+
+				<div class="project">
+					<h3>USC's Rocket Propulsion Lab</h3>
+					<p>Creating an interface that automatically tracks details about mechanical parts for 
+					the avionics team using McMaster-Carr’s API with a Python backend to improve avionics 
+					order processes’ efficiency by 50%. Implementing a software defined radio using a 
+					HackRF One to measure power inputs on sensors and receive and demodulate raw GPS data
+					to test the rocket’s GPS. Converting template GeckoDrive program into a template G-code 
+					program for X-Winder filament winding machine.</p>
+				</div>
+
+				<div class="project">
+					<h3></h3>
+					<p>Reconstructed data using MATLAB to visually validate the motion of points over time 
+					after calibrating the MCS using the direct linear transformation method. Tested and 
+					modified existing main OpenCV Python program to improve robustness by measuring point 
+					values over time, resulting in successful identification of tracking errors over 60% of 
+					the time. Project received 1st Place Overall in Texas A&M’s Virtual Project Showcase for 
+					the Fall 2019 semester.</p>
+				</div>
+
+				<div class="project">
+					<h3></h3>
+					<p></p>
+				</div>
+			</div>
+
+			<a href="#more" class="btn">More</a>
+		</section>
 	</body>
 </html>
