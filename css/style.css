@@ -57,6 +57,28 @@ img {
 
 strong {font-weight: var(--fw-bold);}
 
+/* Buttons */
+
+.btn {
+	display: inline-block;
+	padding: 5em 1.5em;
+	background-color: var(--clr-accent);
+	color: var(--clr-dark);
+	text-decoration: none;
+	cursor: pointer;
+	font-size: .8rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: var(--fw-bold);
+	transition: transition 200ms ease-in-out;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+}
+
+/* Typography */
+
 h1,
 h2,
 h3 {
@@ -128,6 +150,32 @@ nav { display: none;}
 	}
 }
 
+/* My work */
+
+.projects {
+	left: 50%;
+	text-align: center;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.section__title--work::after {
+	width: 2em;
+	height: 1px;
+	margin: 0.5em auto 1em;
+}
+
+@media (min-width: 800px) {
+	.projects {
+		display: flex;
+		max-width: 1000px;
+		margin: 0 auto; 
+	}
+
+	.project + .project {
+		margin-left: 2em;
+	}
+}
 
 
 
